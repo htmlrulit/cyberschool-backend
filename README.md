@@ -30,12 +30,15 @@
 
 
 1. Установите зависимости
+```
 npm install
+```
 
-2. Установите переменные среды
+3. Установите переменные среды
 PORT: Server port (установлено 3000)
 
-3. Создайте таблицу PostgreSQL
+4. Создайте таблицу PostgreSQL
+```
 CREATE TABLE test_results (
     id SERIAL PRIMARY KEY,
     user_id INTEGER NOT NULL,
@@ -44,7 +47,7 @@ CREATE TABLE test_results (
     timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     total_questions INTEGER NOT NULL
 );
-
+```
 4. Запустите сервер
 npm start
 
